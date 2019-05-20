@@ -33,7 +33,7 @@ If you cannot change your theme to inherit from a Material Components theme, you
   
   ## 4. Add a Material component to your app
   
-  ###### Implementing a text field via XML
+  #### Implementing a text field via XML
   The default filled text field XML is defined as:
 
   ```xml
