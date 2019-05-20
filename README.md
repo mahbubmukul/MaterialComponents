@@ -30,3 +30,36 @@ If you cannot change your theme to inherit from a Material Components theme, you
       <!-- ... -->
   </style> 
   ```
+  
+  ## 4. Add a Material component to your app
+  
+  ###### Implementing a text field via XML
+  The default filled text field XML is defined as:
+
+  ```xml
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/textfield_label">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  </com.google.android.material.textfield.TextInputLayout>
+  ```
+  Note: If you are not using a theme that inherits from a Material Components theme, you will have to specify the text field  style as well, via style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+
+  Other text field styles are also provided. For example, if you want an outlined text field in your layout, you can apply the Material Components outlined style to the text field in XML:
+
+  ```xml
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/textfield_label">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  </com.google.android.material.textfield.TextInputLayout>
+  ```
